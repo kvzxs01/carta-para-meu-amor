@@ -1,0 +1,183 @@
+body
+
+{margin:0;background:#060053;
+    color:#b60000;
+    font-family:Arial;
+    text-align:center;
+    overflow-x:hidden}.hidden{display:none}.envelope{margin:15vh auto;
+        width:240px;padding:30px;
+        background:#234dbe;
+        border-radius:12px;
+        cursor:pointer}.gallery img{margin:10px;border-radius:10px} .heart{position:fixed;animation:f 6s linear infinite}@keyframes f{from{transform:translateY(100vh)}to{transform:translateY(-10vh)}}
+        .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre as fotos */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 220px;      /* Largura da foto */
+    height: 220px;     /* Altura da foto */
+    object-fit: cover; /* Não deforma a imagem */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(252, 2, 2, 0.3);
+}
+button {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e63956;
+}
+
+.contador {
+    width: 420px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .35),
+        0 0 20px rgba(65, 150, 255, .3);
+
+    transition: all .3s ease;
+}
+
+.contador:hover {
+    transform: translateY(-5px) scale(1.02);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .45),
+        0 0 30px rgba(65, 150, 255, .5);
+}
+
+.contador h2 {
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-family: "Dancing Script", cursive;
+    font-size: 38px;
+    font-weight: bold;
+
+    text-shadow: 0 0 15px rgba(255,255,255,.35);
+}
+
+#counter {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    background: rgba(0, 0, 0, 0.05);
+
+    text-shadow:
+        0 0 10px rgba(17, 0, 255, 0.8),
+        0 0 25px rgba(255, 255, 255, 0.4);
+}
+
+
+/* Título da carta */
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+/* Texto da carta */
+#typed {
+    font-family: "Montenegrin Gothic One", cursive;
+    font-size: 32px;
+    line-height: 1.8;
+    color: #f5f5f5;
+    text-align: justify;
+    text-shadow: 0 0 8px rgba(255,255,255,0.15);
+    padding: 10px 20px;
+}
+
+/* Frases da carta */
+.words {
+    font-family: "Montenegrin Gothic One", cursive;
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin: 12px 0;
+    text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    font-family: "Poppins", sans-serif;
+    color: white;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.12) 2px, transparent 3px),
+        radial-gradient(circle at 80% 15%, rgba(255,255,255,.08) 2px, transparent 3px),
+        radial-gradient(circle at 30% 80%, rgba(255,255,255,.10) 2px, transparent 3px),
+        radial-gradient(circle at 90% 70%, rgba(255,255,255,.12) 2px, transparent 3px),
+        linear-gradient(135deg,
+            #020b24 0%,
+            #0a2348 35%,
+            #133b73 70%,
+            #1b5aa6 100%);
+
+    background-size:
+        250px 250px,
+        300px 300px,
+        220px 220px,
+        280px 280px,
+        cover;
+
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* impede qualquer elemento de passar da tela */
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* força qualquer bloco a caber na tela */
+    div, section, main {
+        max-width: 100%;
+    }
+
+    /* corrige botões no celular */
+    button {
+        max-width: 100%;
+    }
+}
